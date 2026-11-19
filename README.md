@@ -1,6 +1,6 @@
 # Flake
 
-<img src="https://raw.githubusercontent.com/squairdev/Flake/main/Flake.png" alt="Flake" width="120"/>
+<img src="https://github.com/squairdev/Flake/blob/main/Flake.png" alt="Flake" width="120"/>
 
 A simple <a href="https://github.com/forcequitOS/worse_query">worse_query</a> wallpaper applier.
 
