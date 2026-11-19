@@ -80,6 +80,7 @@ struct SettingsView: View {
                     CreditsView(name: "0xjohnny", url: "https://github.com/0xjohnnydev", desc: "worse_query exploit")
                     CreditsView(name: "roooot", url: "https://github.com/rooootdev", desc: "File picker fix & credits UI")
                     CreditsView(name: "leminlimez", url: "https://github.com/leminlimez", desc: "A lot of the wallpaper explorer's backend and rendering")
+                    CreditsView(name: "SerStars", url: "https://github.com/SerStars", desc: "Wallpaper repo")
                 }
             }
                 .listStyle(.insetGrouped)
