@@ -19,9 +19,11 @@ Supports **iOS 26.0-26.7.3** and **27.0-27.3 Developer Beta 1**
 
 - [ ] Haptics
 
-- [ ] Wallpaper Browser
+- [x] Wallpaper Browser
 
 - [ ] Overall code cleanup
+
+- [ ] Video importing
 
 - [ ] More?
 
@@ -33,6 +35,7 @@ Supports **iOS 26.0-26.7.3** and **27.0-27.3 Developer Beta 1**
 - <a href="https://github.com/forcequitOS">forcequitOS</a>. Discovering the exploit.
 - <a href="https://github.com/0xjohnnydev">0xjohnny</a>. Discovering the exploit.
 - <a href="https://github.com/rooootdev">roooot</a>. File picker fix and in-app credits UI.
+- <a href="https://github.com/leminlimez">leminlimez</a>. A lot of the wallpaper explorer's backend and rendering.
 - <a href="https://github.com/fytuf">fytuf</a>. Making the Logo!
 
 <br>

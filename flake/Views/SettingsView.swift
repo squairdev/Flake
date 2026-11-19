@@ -78,7 +78,8 @@ struct SettingsView: View {
                     CreditsView(name: "jailbreakdotparty team", url: "https://github.com/jailbreakdotparty", desc: "Lots of worse_query functions and logs")
                     CreditsView(name: "forcequitOS", url: "https://github.com/forcequitos", desc: "worse_query exploit")
                     CreditsView(name: "0xjohnny", url: "https://github.com/0xjohnnydev", desc: "worse_query exploit")
-                    CreditsView(name: "roooot", url: "https://github.com/rooootdev", desc: "file picker fix & credits UI")
+                    CreditsView(name: "roooot", url: "https://github.com/rooootdev", desc: "File picker fix & credits UI")
+                    CreditsView(name: "leminlimez", url: "https://github.com/leminlimez", desc: "A lot of the wallpaper explorer's backend and rendering")
                 }
             }
                 .listStyle(.insetGrouped)
