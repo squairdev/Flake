@@ -10,15 +10,16 @@ import UIKit
 import UniformTypeIdentifiers
 
 struct WorseView: View {
-    @ObservedObject var qf = posterfuncs.shared
+    static let shared = WorseView()
+    @ObservedObject var qf = PosterFuncs.shared
     @State public var importing = false
-    @State public var issettings = false
+    @State public var whichpop: whichpop?
     @State private var applyactive: applydone? = nil
     var body: some View {
         NavigationStack{
             
             Form{
-                Section(header: Text("Version 1.0")){
+                Section(header: Text("Version 1.1")){
                     Button("Import"){
                         importing=true
                     }
@@ -80,24 +81,34 @@ struct WorseView: View {
             .onAppear{qf.refresh()}
             Spacer()
             
-                .fileImporter(isPresented: $importing, allowedContentTypes: [.item]){
+                .fileImporter(isPresented: $importing, allowedContentTypes: [.zip,.tendies]){
                     result in
                         qf.importwall(result)
                 }
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button(){
-                            issettings=true
+                            whichpop = .settings
                         }label: {
                             Image(systemName: "gear")
                         }
                     }
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button(){
+                            whichpop = .explore
+                        }label: {
+                            Image(systemName: "safari")
+                        }
+                    }
                 }
-            
-                .popover(isPresented: $issettings) {
-                    SettingsView()
+                .popover(item: $whichpop){e in
+                    switch e {
+                    case .settings:
+                        SettingsView()
+                    case .explore:
+                        WallpaperView()
+                    }
                 }
-            
                 .navigationTitle("Flake")
         }
     }
@@ -106,6 +117,17 @@ enum applydone: Identifiable{
     case success
     case error
     var id: Self {self}
+}
+
+enum whichpop: Identifiable {
+    case settings
+    case explore
+    
+    var id: Self {self}
+}
+
+extension UTType{
+    static let tendies = UTType(filenameExtension: "tendies", conformingTo: .zip)!
 }
 
 #Preview {

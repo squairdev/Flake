@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(\.dismiss) var dismiss
-    @State public var qf = posterfuncs()
-    @State public var wf = worsefuncs()
+    @State public var qf = PosterFuncs()
+    @State public var wf = WorseFuncs()
     @StateObject private var mgr = Man.shared
     var body: some View {
         NavigationStack{

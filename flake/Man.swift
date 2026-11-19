@@ -12,8 +12,12 @@ import UniformTypeIdentifiers
 final class Man: ObservableObject {
     static let shared = Man()
     @Published var logOutput = ""
+    
     @Published var pbpath = ""
     @Published var apppath = URL(fileURLWithPath: "/private/var/mobile/Containers/Data/Application")
     @Published var pbextension = "/Library/Application Support/PRBPosterExtensionDataStore/61/Extensions/com.apple.WallpaperKit.CollectionsPoster/descriptors"
     @Published var mpextension = "/Library/Application Support/PRBPosterExtensionDataStore/61/Extensions/com.apple.MercuryPoster/descriptors"
+    
+    @Published var customURL = "https://raw.githubusercontent.com/SerStars/Nugget-Wallpapers/refs/heads/main/wallpapers-custom.json"
+    @Published var appleURL = "https://raw.githubusercontent.com/SerStars/Nugget-Wallpapers/refs/heads/main/wallpapers-apple.json"
 }

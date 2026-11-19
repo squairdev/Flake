@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E266796A30AE4E7A00D52FDC /* GIFImage in Frameworks */ = {isa = PBXBuildFile; productRef = E266796930AE4E7A00D52FDC /* GIFImage */; };
 		E2F4886E30ABB040003A0574 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = E2F4886D30ABB040003A0574 /* ZIPFoundation */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2F4886E30ABB040003A0574 /* ZIPFoundation in Frameworks */,
+				E266796A30AE4E7A00D52FDC /* GIFImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			name = Flake;
 			packageProductDependencies = (
 				E2F4886D30ABB040003A0574 /* ZIPFoundation */,
+				E266796930AE4E7A00D52FDC /* GIFImage */,
 			);
 			productName = flake;
 			productReference = E2ADB7A930ABA3D900F2C6D5 /* Flake.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				E2F4886C30ABB040003A0574 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				E266796830AE4E7A00D52FDC /* XCRemoteSwiftPackageReference "GIFImage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E2ADB7AA30ABA3D900F2C6D5 /* Products */;
@@ -269,7 +273,6 @@
 		E2ADB7B530ABA3DB00F2C6D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Flake;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,7 +293,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.squair.Flake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -311,7 +314,6 @@
 		E2ADB7B630ABA3DB00F2C6D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = Flake;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,7 +334,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.squair.Flake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -374,6 +376,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E266796830AE4E7A00D52FDC /* XCRemoteSwiftPackageReference "GIFImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/igorcferreira/GIFImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		E2F4886C30ABB040003A0574 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
@@ -385,6 +395,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E266796930AE4E7A00D52FDC /* GIFImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E266796830AE4E7A00D52FDC /* XCRemoteSwiftPackageReference "GIFImage" */;
+			productName = GIFImage;
+		};
 		E2F4886D30ABB040003A0574 /* ZIPFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E2F4886C30ABB040003A0574 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;

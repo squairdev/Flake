@@ -10,9 +10,9 @@ import Foundation
 import ZIPFoundation
 import Combine
 
-public class posterfuncs: ObservableObject {
-    static let shared = posterfuncs()
-    let wf = worsefuncs()
+public class PosterFuncs: ObservableObject {
+    static let shared = PosterFuncs()
+    let wf = WorseFuncs()
     let mgr = Man.shared
     @Published var imports: [imported] = []
     

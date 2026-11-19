@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 import Foundation
 import UniformTypeIdentifiers
-public class worsefuncs{
+public class WorseFuncs{
     
     // a lot of the stuff here is from https://github.com/jailbreakdotparty/erosion and https://github.com/forcequitOS/worse_query/blob/main/worse_query/ContentView.swift
     @StateObject private var mgr = Man.shared
