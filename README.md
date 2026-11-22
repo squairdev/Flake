@@ -4,9 +4,24 @@
 
 A simple <a href="https://github.com/forcequitOS/worse_query">worse_query</a> wallpaper applier.
 
-Supports **iOS 26.0-26.7.3** and **27.0-27.3 Developer Beta 1**
+<p align="left">
+  <a href="https://discord.gg/24zYDQhtCd">
+    <img src="https://img.shields.io/badge/Discord-Join%20the%20Server-7289DA.svg" alt="Discord Server">
+  </a>
+  <a href="https://github.com/squairdev/Flake/stargazers">
+    <img src="https://img.shields.io/github/stars/squairdev/Flake?style=social" alt="GitHub stars">
+  </a>
+  <a href="https://github.com/squairdev/Flake/issues">
+    <img src="https://img.shields.io/github/issues/squairdev/Flake" alt="GitHub issues">
+  </a>
+  <a href="https://github.com/squairdev/Flake/issues">
+    <img src="https://img.shields.io/github/downloads/squairdev/Flake/total" alt="Total downloads">
+  </a>
+</p>
 
 <br>
+
+Supports **iOS 26.0-26.7.3** and **27.0-27.3 Developer Beta 1**
 
 > [!WARNING]
 > This tool does NOT support iOS 18- and 27.3 Developer Beta 2+.
